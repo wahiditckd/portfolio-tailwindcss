@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web portofolio tailwind">
+    <meta name="keyword" content="tailwindcss, CSS, tailwind">
+    <meta name="author" content="codepolitan">
     <title>web portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -14,9 +18,15 @@
          background-image: linear-gradient(to bottom right, #4C51BF , #702459 );
       }
       </style>
+      <style>
+      .gradient-skill
+      {
+        background-image: linear-gradient(#FC8181,#FED7D7);
+      }
+    </style>
   </head>
   <body>
-    <section class="w-screen mx-auto px-4">
+    <section class="w-screen mx-auto px-8">
       <nav class="flex flex-wrap p-6">
         <div class="flex flex-shrink-0 mr-6">
           <img src="img/logo.png" class="h-10 w-50 mr-2" />
@@ -66,7 +76,7 @@
       <div class="px-16 py-8 text-center text-white">
         <h1 class="w-full text-5xl font-bolt ">About me</h1>
     <div class="mb-4">
-      <div class="bg-pink-500 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
+      <div class="bg-pink-500 w-2/3 md:w-1/6 opacity-45 rounded h-1 mx-auto"></div>
     </div> 
     <h2 class="text-3xl font-bold mb-2 ">
       Hai, Saya Wahid. Senang berjumpa dengan Anda. 
@@ -75,7 +85,7 @@
       Saya seorang IT Support dan juga Programmer, saya sedang belajar react, nextjs, tailwind Saya juga bisa merancang suatu sistem yang dibutuhkan user.
       </h3>
       <div class="w-full">
-        <div class="px-4 py-4">
+        <div class="px-2 py-2">
         
           <img src="img/wh2.jpg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"/>
         
@@ -83,12 +93,12 @@
       </div>
     </div>
     <!--box porfolio-->
-    <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8  rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-1 rounded-lg">
       <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
         <!--ELEMEN BOX PERTAMA-->
         <i class="fas fa-laptop-code fa-5x text-blue-500 mb-6"></i>
         <!--<i class="fa-solid fa-cube fa-5x text-blue-500 mb-6 "></i>-->
-        <div class="p-4 ">
+        <div class="p-4  text-center">
           <p class="font-bold text-lg md:text-xl mb-6">PROGRAMMING</p>
           <p class="text-gray-600 text-base mb-2">PHP</p>
           <hr class="text-gray-600 mb-2">
@@ -122,7 +132,7 @@
           <hr class="text-gray-600 mb-2">    
         </div>
         <div class="px-2 py-4">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio
+          <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio
             </button>
         </div>
       </div>
@@ -148,14 +158,53 @@
       </div>
    
     </div>
+    <!--skill framework left-->
     </section>
-    <section class="w=screen mx-auto py-4 bg-white h-32">
-      Skill Famework
+    <section class="w=screen mx-auto py-4 bg-white ">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4"><img src="img/img4.avif" class="max-w-full rounded-lg shadow-lg"></div>
+	      <!--skill framework bag. 2 atau kanan-->
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4 bg-white-700 ">
+          <div class="md:pr-12">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
+            <div class="mb-4">
+              <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 mx-0 rounded"></div>
+            </div>
+           
+                <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skalakeahlian untuk framework:</p>
+                <ul class="list-none mt-4">
+                  <li class="grid grid-cols-2 py-2">
+                    <p class="text-lg text-gray-600">codigneter</p>
+                    <div class="gradient-skill w-7/8"></div>
+                  </li>
+                  <li class="grid grid-cols-2 py-2">
+                    <p class="text-lg text-gray-600">Laravel</p>
+                    <div class="gradient-skill w-3/4"></div>
+                </li>
+                <li class="grid grid-cols-2 py-2">
+                    <p class="text-lg text-gray-600">Bootstrap</p>
+                    <div class="gradient-skill w-2/3"></div>
+                 </li>
+                 <li class="grid grid-cols-2 py-2">
+                   <p class="text-lg text-gray-600">Tailwindcss</p>
+                   <div class="gradient-skill w-1/2"></div>
+                 </li>
+                </ul>
+              </li>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
     </section>
+
+    <!--Membangun menu my recent work-->
     <section
-      class="w=screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700"
-    >
-      Recent Work
+      class="container mx-auto py-8 bg-white">
+     <div class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</div>
+
+      
     </section>
     <section class="w=screen mx-auto py-4 bg-indigo-700 h-32">
       Contact me
